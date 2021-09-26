@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sample Suite">
+	<test name="test case one">
+		<groups>
+			<run>
+				<include name="savingaccount" />
+				<include name="currentaccount" />
+				<include name="salaryaccount" />
+			</run>
+		</groups>
+		<classes>
+			<class name="Sadhanapratice.TestDemo" />
+		</classes>
+	</test>
+</suite>

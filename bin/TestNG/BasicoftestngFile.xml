@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sample Suite">
+	<test name="test case one">
+		<groups>
+			<run>
+				<include name="moneytransfer" />    
+				<include name="statement" />
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNG.Basicoftestng" />
+		</classes>
+	</test>
+</suite>
+  
