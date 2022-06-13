@@ -5,11 +5,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestNavigate {
 	WebDriver driver;
 	public void DriverSetting() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver_win32 (2)\\chromedriver.exe");
 		driver = new ChromeDriver();	driver = new ChromeDriver();
-	driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
-	public void TestNavigation() throws InterruptedException {
+	public void TestNavigation(){
 		Navigation obj = driver.navigate();    //Navigation is a Selenium defined class
 		obj.to("https://www.facebook.com/");
 		//Thread.sleep(3000);
@@ -21,7 +21,7 @@ public class TestNavigate {
 		//Thread.sleep(3000);
 		obj.forward();
 	}
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args){
 		TestNavigate objT = new TestNavigate();
 		objT.DriverSetting();
 		objT.TestNavigation();

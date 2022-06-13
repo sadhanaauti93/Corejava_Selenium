@@ -8,9 +8,10 @@ import org.openqa.selenium.support.ui.Select;
 public class basicdriver {
 	WebDriver driver;
 	public void DriverSetting() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver.exe");
-		driver = new ChromeDriver();	
-	driver.manage().window().maximize();
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Desktop\\Sadhana\\Selenium\\Setup\\Chromedriver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 	public void navigate() {
 	driver.get("https://www.facebook.com/");
@@ -26,7 +27,7 @@ public class basicdriver {
 	
 	WebElement monthdropdown = driver.findElement(By.id("month"));  //Montrh dropdown in facebook
 	Select objm = new Select(monthdropdown);
-	 objm.selectByValue("2");
+	 objm.selectByValue("2");	// String 
 
 	
 	/*WebElement textbox = driver.findElement(By.id("email"));

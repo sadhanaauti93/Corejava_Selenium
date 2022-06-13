@@ -18,7 +18,8 @@ public class dropdown {
 		Select objm = new Select(monthdropdown);
 		objm.selectByValue("3");					 // When value is fix
 		//objm.selectByVisibleText("Feb");    		//Black font and text format
-		//objm.selectByIndex(1);					// When value is not fix
+		//objm.selectByIndex(1);
+		// When value is not fix Select By.Name("");
 	}
 	public static void main(String[] args) {
 		dropdown obj = new dropdown();

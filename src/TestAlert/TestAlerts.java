@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestAlerts {
 	WebDriver driver;
 	public void DriverSetting() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver_win32 (2)\\chromedriver.exe");
 		driver = new ChromeDriver();	driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	}

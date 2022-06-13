@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 public class TestClickAndDclick {
 	WebDriver driver;
 	public void DriverSetting() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Chromedriver\\chromedriver_win32 (2)\\chromedriver.exe");
 		driver = new ChromeDriver();	
 		driver.manage().window().maximize();
 	}

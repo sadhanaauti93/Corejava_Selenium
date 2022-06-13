@@ -17,7 +17,7 @@ public class GmailScreenshot {
 	  public void Gscreenshot() {
 		  driver.get("https://mail.google.com/mail/u/0/#inbox");
 		  File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		  File target = new File("\"C:\\\\Users\\\\SADGHADG\\\\OneDrive - Capgemini\\\\Documents\\\\Selenium\\\\Setup\\\\Screenshot\\\\login.png");
+		  File target = new File("C:\\Users\\SADGHADG\\OneDrive - Capgemini\\Documents\\Selenium\\Setup\\Screenshot\\login.png");
 	  try {
 		FileHandler.copy(source, target);
 	} catch (IOException e) {
